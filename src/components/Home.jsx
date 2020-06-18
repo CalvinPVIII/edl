@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import sandAndSage from '../images/sandandsagefront.PNG'
 import reddingWriter from '../images/reddingfront.jpg'
 import profile from "../images/profile.jpg"
+import bannerImg from "../images/banner.png"
 
 function Home() {
     return (
@@ -35,19 +36,19 @@ function Home() {
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
-                min-width: 430px;
+                min-width: 350px;
             }
             .bookImage{
-                height: 600px;
-                width: 430px;
+                height: 550px;
+                width: 350px;
                 margin: 10vw;
                 background-color: grey
                 position: absolute;
                 z-index: -1;
             }
             .book{
-                height: 600px;
-                width: 430px;
+                height: 550px;
+                width: 350px;
             }
             .book:hover{
                 opacity: 0.6;
@@ -58,36 +59,45 @@ function Home() {
                 justify-content: center;
                 color: white;
                 text-align: center;
-                width: 400px;
+                width: 350px;
                 position: relative;
                 z-index: 1;
-                margin-top: -80%;
-                opacity: 0;
+                margin-top: -90%;
+                display: none;
             }
             
             .bookImage:hover .bookTitle{
-                opacity: 1;
+                display: flex;
             }
             
         `}</style>
+        <Link to={"/about"}>
         <div className="profile">
             <img className="profileImg"src={profile}/>
-            <div className="aboutMe"> About Me</div>
+            <span className="aboutMe">About Me </span>
         </div>
+        </Link>
         <style jsx>{`
             .profileImg{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                height: 70vh;
-                width: 25vw;
+                height: 600px;
+                width: 450px;
                 position: relative;
                 z-index: -1;
             }
             .aboutMe{
-                background-color: green;
-                width: 10vw;
-                height: 5vh;
+                display: block;
+                margin-left: 55%;
+                margin-right: auto;
+                margin-top: -25%;
+                font-size: 40px;
+                background-color: teal;
+                width: 200px;
+                color: white;
+                text-align: centter;
+                padding: 20px;
                 
             }
         `}
