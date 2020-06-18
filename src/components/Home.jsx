@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import sandAndSage from '../images/sandandsagefront.PNG'
 import reddingWriter from '../images/reddingfront.jpg'
+import profile from "../images/profile.jpg"
+
 function Home() {
     return (
       <div className="">
@@ -18,16 +20,12 @@ function Home() {
              <Link to={'/sandandsagebrush'}>
                  <div className="bookImage">
                     <img className="book" src={sandAndSage}/>
-                 </div>
-                 <div className="bookTitleWrap">
                      <div className="bookTitle">Sand and Sage Brush</div>
                  </div>
              </Link>
              <Link to={'/reddingwritter'}>
                  <div className="bookImage">
                     <img className="book" src={reddingWriter}/>
-                 </div>
-                 <div className="bookTitleWrap">
                     <div className="bookTitle">Redding Writer</div>
                  </div>
              </Link>
@@ -35,43 +33,65 @@ function Home() {
         <style jsx>{`
             .bookSection{
                 display: flex;
-                flex-flow: row-wrap;
+                flex-flow: row wrap;
                 justify-content: center;
+                min-width: 430px;
             }
             .bookImage{
-                height: 60vh;
-                width: 20vw;
+                height: 600px;
+                width: 430px;
                 margin: 10vw;
                 background-color: grey
                 position: absolute;
                 z-index: -1;
             }
             .book{
-                height: 60vh;
-                width: 20vw;
+                height: 600px;
+                width: 430px;
             }
             .book:hover{
                 opacity: 0.6;
             }
             .bookTitle{
-                font-size: 3vw;
+                font-size: 55px;
                 display: flex;
                 justify-content: center;
                 color: white;
                 text-align: center;
-            }
-            .bookTitleWrap{
-                width: 20vw;
-                position: absolute;
+                width: 400px;
+                position: relative;
                 z-index: 1;
-                margin-top: -30%;
-                margin-left: 10%;
+                margin-top: -80%;
                 opacity: 0;
             }
-            .bookImage:hover ~ .bookTitleWrap{
+            
+            .bookImage:hover .bookTitle{
                 opacity: 1;
             }
+            
         `}</style>
+        <div className="profile">
+            <img className="profileImg"src={profile}/>
+            <div className="aboutMe"> About Me</div>
+        </div>
+        <style jsx>{`
+            .profileImg{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 70vh;
+                width: 25vw;
+                position: relative;
+                z-index: -1;
+            }
+            .aboutMe{
+                background-color: green;
+                width: 10vw;
+                height: 5vh;
+                
+            }
+        `}
+        </style>
       </div>
     );
   }
