@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import sandAndSage from '../images/sandandsagefront.PNG'
 import reddingWriter from '../images/reddingfront.jpg'
 import profile from "../images/profile.jpg"
-import bannerImg from "../images/banner.png"
 
 function Home() {
     return (
@@ -91,14 +90,16 @@ function Home() {
                 display: block;
                 margin-left: 55%;
                 margin-right: auto;
-                margin-top: -25%;
+                margin-top: -28%;
                 font-size: 40px;
                 background-color: teal;
                 width: 200px;
                 color: white;
                 text-align: centter;
                 padding: 20px;
-                
+            }
+            .profileImg{
+                margin-bottom: 2%;
             }
         `}
         </style>
