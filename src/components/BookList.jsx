@@ -44,6 +44,12 @@ function BookList() {
               barnesAndNobleLink={book.barnesAndNobleLink}
           />)}
         </div>
+          <style jsx>{`
+            .header {
+              text-align: center;
+              font-size: 60px;
+            }
+          `}</style>
       </div>
     );
   }

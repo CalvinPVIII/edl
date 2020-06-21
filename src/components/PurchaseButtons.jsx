@@ -13,13 +13,13 @@ function PurchaseButtons(props) {
 
   if (props.amazonLink){
     amazonLink = (
-      <a href={props.amazonLink} target="_blank" className="secondaryPurchaseButton">Amazon</a>
+      <a href={props.amazonLink} target="_blank" className="amazonPurchaseButton">Amazon</a>
     )
   }  
 
   if (props.barnesAndNobleLink){
     barnesAndNobleLink = (
-      <a href={props.barnesAndNobleLink} target="_blank" className="secondaryPurchaseButton">Barnes and Noble </a>
+      <a href={props.barnesAndNobleLink} target="_blank" className="barnesAndNoblePurchaseButton">Barnes and Noble </a>
     )
   }  
 
@@ -27,8 +27,8 @@ function PurchaseButtons(props) {
       <div className="">
         <div className="storeLinks">
             {purchaseLink}
-            {amazonLink}
             {barnesAndNobleLink}
+            {amazonLink}
           </div>
           <style jsx>{`
           .storeLinks{
@@ -48,6 +48,44 @@ function PurchaseButtons(props) {
           }
           .mainPurchaseButton:visited{
             color: #00bac7;
+          }
+
+          .mainPurchaseButton:hover{
+              color: white;
+              background-color: #00bac7
+          }
+
+          .amazonPurchaseButton{
+            border: 2px solid black;
+            width: 100px;
+            border-radius: 300px;
+            text-align: center;
+            padding: 13px 26px;
+            color: #00bac7;
+            margin-top: 1%;
+            font-weight: bold;
+            font-size: 14px;
+            color:black;
+            margin-top: 3vh;
+          }
+
+          .barnesAndNoblePurchaseButton{
+            border: 2px solid black;
+            width: 125px;
+            border-radius: 300px;
+            text-align: center;
+            padding: 13px 26px;
+            color: #00bac7;
+            margin-top: 1%;
+            font-weight: bold;
+            font-size: 14px;
+            color:black;
+            margin-top: 3vh;
+          }
+
+          .barnesAndNoblePurchaseButton:hover, .amazonPurchaseButton:hover{
+              background-color: black;
+              color: white;
           }
 
         `}</style>

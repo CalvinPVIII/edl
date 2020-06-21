@@ -80,6 +80,7 @@ function BookPage(props) {
       }
       .info{
         margin-left: 10%;
+        margin-bottom: 10%;
       }
     `}</style>
       </div>
