@@ -22,7 +22,7 @@ function BookList() {
     cover: {redding},
     published: false,
     description: `A young couple from Sacramento in the 1950's decide to move to a ranch in Shasta County near Redding, California. She sees it as a chance to peruse her dreams to be a writer, and he wants to be a rancher. They are unprepared for the changes this will make in their lives.`,
-    link: '/reddingwritter',
+    link: '/reddingwriter',
     purchaseLink: false,
     amazonLink: false,
     barnesAndNobleLink: false,

@@ -72,6 +72,7 @@ function Book(props) {
             padding: 20px;
             color: #00bac7;
             margin-top: 3%;
+            font-weight: bold;
           }
           .mainPurchaseButton:visited{
             color: #00bac7;

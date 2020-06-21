@@ -23,7 +23,7 @@ function Home() {
                      <div className="bookTitle">Sand and Sage Brush</div>
                  </div>
              </Link>
-             <Link to={'/reddingwritter'}>
+             <Link to={'/reddingwriter'}>
                  <div className="bookImage">
                     <img className="book" src={reddingWriter}/>
                     <div className="bookTitle">Redding Writer</div>

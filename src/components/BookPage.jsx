@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 
-function BookPage() {
+function BookPage(props) {
+  console.log(props);
+  
     return (
       <div className="">
-         <h1>read ya book</h1>
+         <h1>{props.title}</h1>
       </div>
     );
   }
