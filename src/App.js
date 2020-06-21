@@ -63,6 +63,7 @@ function App() {
             barnesAndNobleLink = {book.barnesAndNobleLink}
             published = {book.published}
             image = {book.image}
+            bookList = {bookTitleList}
          />}
       />)}
      </Switch>

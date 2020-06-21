@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import PurchaseButtons from './PurchaseButtons'
 
+import PurchaseButtons from './PurchaseButtons'
+import Footer from './Footer'
 
 function BookPage(props) {
   console.log(props);
@@ -28,6 +29,10 @@ function BookPage(props) {
             barnesAndNobleLink={props.barnesAndNobleLink}
           />
          </div>
+         <Footer 
+          bookList = {props.bookList}
+          currentBook = {props.title}
+         />
       
     <style jsx>{`
       .header{
@@ -58,12 +63,14 @@ function BookPage(props) {
         width: 419px;
         height: 594px;
       }
+
       .quoteBlock{
         display:flex;
         flex-flow: column wrap;
         margin-left: auto;
         margin-right: auto;
       }
+
       .excerpt{
         display: block;
         margin-left: auto;
@@ -72,15 +79,21 @@ function BookPage(props) {
         line-height: 4vh;
         font-size: 25px;
       }
+
       .quotation{
         display: block;
         margin-left: auto;
         margin-right: auto;
         color: grey;
       }
+
       .info{
         margin-left: 10%;
         margin-bottom: 10%;
+      }
+
+      .infoTitle{
+        font-size: 20px;
       }
     `}</style>
       </div>
