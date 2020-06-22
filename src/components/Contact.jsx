@@ -3,12 +3,6 @@ import { Link } from 'react-router-dom'
 
 
 function Contact() {
-    const [emailSubject, setEmailSubject] = useState("")
-
-    const changeEmailSubject = (event) =>{
-        console.log(event);
-        
-    }
 
     return (
       <div className="">
@@ -17,28 +11,10 @@ function Contact() {
             <div className="socialLinks">
                 <a href="mailto:elliederricklewis@gmail.com"><p className="mailLink">✉</p></a>
                 <a href="https://www.facebook.com/elliederricklewis46" target="_blank"><p className="facebookLink">f</p></a>
-                <h1>{emailSubject}</h1>
             </div>
          </div>
         <div className="emailSection">
-            <p className="conactInfo">Reach out to me on social media, or send me an email using the form below or by emailing elliederricklewis@gmail.com</p>
-            <form action={`mailto:elliederricklewis@gmail.com?subject=${emailSubject}`} method="get">
-                <p className='formItems'>Email:</p>
-                <br/>
-                <input type="text" name="email"/>
-                <br/>
-                <p className='formItems'>Subject</p>
-                <br/>
-                <input type="text" name="subject" onChange={console.log('test')
-                }/>
-                <br/>
-                <p className='formItems'>Message:</p>
-                <br/>
-                <textarea name="body" rows="4" cols="40"/>
-                <br/>
-                <button type="submit">Send</button>
-                
-            </form>
+            <p className="conactInfo">Reach out to me on social media, or send me an email at elliederricklewis@gmail.com</p>
         </div>
     <style jsx>{`
         .header{
@@ -79,10 +55,6 @@ function Contact() {
 
         .emailSection{
             text-align: center;
-        }
-
-        .formItems{
-            margin-bottom: -0.5%;
         }
     `}</style>
       </div>
