@@ -9,6 +9,7 @@ import BookList from './components/BookList'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from'./components/Contact'
+import Gallery from './components/Gallery';
 
 import sandAndSage from './images/sandandsagefront.PNG'
 import reddingWriter from './images/reddingfront.jpg'
@@ -54,6 +55,7 @@ function App() {
       <Route exact path='/' component={Home}/>
       <Route path="/about" component={About}/>
       <Route path='/contact' component={Contact}/>
+      <Route path='/gallery' component={Gallery}/>
       {booksInfo.map((book)=>
         <Route path={`/${book.title.split(" ").join("")}`}  render={(props)=>
           <BookPage

@@ -24,6 +24,7 @@ function About() {
             .header{
                 text-align: center;
                 font-size: 60px;
+                margin-top: 5%;
             }
             .aboutSection{
                 display: flex;
