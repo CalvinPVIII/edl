@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
 
 import homestead1 from '../images/homesteader_reunion/1.jpg'
 import homestead2 from '../images/homesteader_reunion/2.jpg'
@@ -18,7 +19,9 @@ function Gallery() {
 
     return (
       <div className="">
+          <Fade bottom={1000}>
         <h1 className='header'>Gallery</h1>
+        </Fade>
         <div className='section'>
             <div className='sectionInfo'>
                 <p className="sectionTitle">Northwest Independant Writers Association</p>
@@ -30,6 +33,7 @@ function Gallery() {
 
                 </div>
             </div>
+            
         </div>
         <div className='section'>
             <div className='sectionInfo'>
@@ -52,7 +56,13 @@ function Gallery() {
 
         .section{
             margin: 10%;
+            animation: fadeIn 2s;
         }
+
+        @keyframes fadeIn{
+            0% {opacity: 0%;}
+            100% {opacity: 100%}
+       }
         
         .sectionImages{
             display: flex;

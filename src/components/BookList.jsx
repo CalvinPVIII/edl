@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
 
 import sandAndSage from '../images/sandandsagefront.PNG'
 import redding from "../images/reddingfront.jpg"
@@ -30,7 +30,9 @@ function BookList() {
 ]
     return (
       <div className="">
-         <h1 className="header">Books</h1>
+        <Fade top duration={1000}>
+          <h1 className="header">Books</h1>
+        </Fade>
          <div className="bookList">
           {books.map((book, index)=>
             <Book
