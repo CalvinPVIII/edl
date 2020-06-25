@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
 
 import PurchaseButtons from './PurchaseButtons'
 
 function Book(props) {
     return (
       <div className="bookWrap">
+        <Fade bottom duration={2000}>
          <Link to={props.link}>
            <img className="bookCover" src={props.cover.sandAndSage || props.cover.redding}/>
           </Link>
@@ -36,6 +38,7 @@ function Book(props) {
             height: 594px;
           }
         `}</style>
+        </Fade>
       </div>
     );
   }

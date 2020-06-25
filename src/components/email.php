@@ -8,7 +8,7 @@ if(isset($_POST['send']))
     $mail_from="$email";
     $header="from: $name <$mail_from>";
     
-    $to='elliederricklewis@gmail.com';
+    $to='calvinp003@gmail.com';
     
     $send_contact=mail($to.$subject.$message.$header);
     

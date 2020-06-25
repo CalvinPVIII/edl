@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
+
 
 import sandAndSage from '../images/sandandsagefront.PNG'
 import reddingWriter from '../images/reddingfront.jpg'
@@ -8,13 +10,14 @@ import profile from "../images/profile.jpg"
 function Home() {
     return (
       <div className="">
-         <h1 className="homeTitle">Official Website for Oregon Author</h1>
-         <h1 className="homeTitle">Ellie Derrick Lewis</h1>
+         <Fade top duration={1000}>
+            <h1 className="homeTitle">Official Website for Oregon Author</h1>
+            <h1 className="homeTitle">Ellie Derrick Lewis</h1>
+         </Fade>
          <style jsx>{`
             .homeTitle{
                 text-align: center;
                 font-size: 6vh;
-             }
         `}</style>
         <div className="bookSection">
              <Link to={'/sandandsagebrush'}>
@@ -36,7 +39,13 @@ function Home() {
                 flex-flow: row wrap;
                 justify-content: center;
                 min-width: 350px;
+                animation: fadeIn 2s;
             }
+
+            @keyframes fadeIn{
+                0% {opacity: 0%;}
+                100% {opacity: 100%}
+           }
             .bookImage{
                 height: 550px;
                 width: 350px;
@@ -70,6 +79,7 @@ function Home() {
             }
             
         `}</style>
+        <Fade top duration={1000}>
         <Link to={"/about"}>
         <div className="profile">
             <img className="profileImg"src={profile}/>
@@ -103,6 +113,7 @@ function Home() {
             }
         `}
         </style>
+        </Fade>
       </div>
     );
   }

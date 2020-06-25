@@ -14,7 +14,7 @@ function Contact() {
          </div>
         <div className="emailSection">
             <p className="conactInfo">Reach out to me on social media, or send me an email using the form below or by emailing elliederricklewis@gmail.com</p>
-            <form action="send_email.php" method="post">
+            <form action="/email.php" method="post"> 
                 <p className='formItems'>Email:</p>
                 <br/>
                 <input type="text" name="email"/>
@@ -31,8 +31,8 @@ function Contact() {
                 <br/>
                 <textarea name="body" rows="4" cols="40"/>
                 <br/>
-                <button type='submit' value="send">Send</button>
-                <input type="hidden" name="submit" value='1'/>
+                <input type='submit' value="Submit" name="send"/>
+                
                 
             </form>
         </div>

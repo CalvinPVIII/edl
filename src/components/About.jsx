@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
 
 import aboutImg from "../images/aboutImg.jpg"
 
 function About() {
     return (
       <div className="">
+          <Fade bottom duration={1500}>
          <h1 className="header">About Me</h1>
          <div className="aboutSection">
             <img src={aboutImg} className="aboutImg"/>
@@ -42,6 +44,7 @@ function About() {
                 margin-left: 5%;
             }
          `}</style>
+         </Fade>
       </div>
     );
   }
