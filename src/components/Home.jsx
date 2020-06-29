@@ -23,13 +23,13 @@ function Home() {
              <Link to={'/sandandsagebrush'}>
                  <div className="bookImage">
                     <img className="book" src={sandAndSage}/>
-                     <div className="bookTitle">Sand and Sage Brush</div>
+                     
                  </div>
              </Link>
              <Link to={'/reddingwriter'}>
                  <div className="bookImage">
                     <img className="book" src={reddingWriter}/>
-                    <div className="bookTitle">Redding Writer</div>
+                   
                  </div>
              </Link>
         </div>
@@ -60,6 +60,7 @@ function Home() {
             }
             .book:hover{
                 opacity: 0.6;
+                border: 2px solid black;
             }
             .bookTitle{
                 font-size: 55px;
@@ -95,6 +96,7 @@ function Home() {
                 width: 450px;
                 position: relative;
                 z-index: -1;
+                margin-bottom: 2%;
             }
             .aboutMe{
                 display: block;
@@ -108,8 +110,8 @@ function Home() {
                 text-align: centter;
                 padding: 20px;
             }
-            .profileImg{
-                margin-bottom: 2%;
+            .profileImg:hover{
+                border: 3px solid black;
             }
         `}
         </style>

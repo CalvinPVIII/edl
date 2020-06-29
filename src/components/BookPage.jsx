@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
 
 import PurchaseButtons from './PurchaseButtons'
 import Footer from './Footer'
 
 function BookPage(props) {
-  console.log(props);
-
-  
-  
     return (
       <div className="">
         <div className="header">
+        <Fade top={1000}>
           <h1 className="bookTitle">{props.fullTitle}</h1>
+          </Fade>
           <p className="description">{props.description}</p>
          </div>
+         <Fade bottom={1000}>
          <img src={props.image} className="bookPic"/>
          <div className='quoteBlock'>
           <p className='excerpt'>"{props.excerpt}"</p>
@@ -29,6 +29,7 @@ function BookPage(props) {
             barnesAndNobleLink={props.barnesAndNobleLink}
           />
          </div>
+         </Fade>
          <Footer 
           bookList = {props.bookList}
           currentBook = {props.title}
@@ -53,6 +54,12 @@ function BookPage(props) {
         line-height: 4vh;
         font-size: 20px;
         color: grey;
+        animation: fadeIn 3s;
+      }
+
+      @keyframes fadeIn{
+        0% {opacity: 0%;}
+        100% {opacity: 100%}
       }
       
       .bookPic{
