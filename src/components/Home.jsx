@@ -23,13 +23,11 @@ function Home() {
              <Link to={'/sandandsagebrush'}>
                  <div className="bookImage">
                     <img className="book" src={sandAndSage}/>
-                     
                  </div>
              </Link>
              <Link to={'/reddingwriter'}>
                  <div className="bookImage">
                     <img className="book" src={reddingWriter}/>
-                   
                  </div>
              </Link>
         </div>
