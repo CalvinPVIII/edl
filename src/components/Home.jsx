@@ -50,9 +50,10 @@ function Home() {
                 height: 550px;
                 width: 350px;
                 margin: 10vw;
-                background-color: grey
+                background-color: black
                 position: absolute;
                 z-index: -1;
+                box-shadow: 5px 10px;
             }
             .book{
                 height: 550px;
@@ -75,9 +76,6 @@ function Home() {
                 display: none;
             }
             
-            .bookImage:hover .bookTitle{
-                display: flex;
-            }
             
         `}</style>
         <Fade top duration={1000}>
@@ -102,17 +100,31 @@ function Home() {
                 display: block;
                 margin-left: 55%;
                 margin-right: auto;
-                margin-top: -28%;
+                margin-top: -110%;
                 font-size: 40px;
                 background-color: teal;
                 width: 200px;
                 color: white;
                 text-align: centter;
                 padding: 20px;
+                
             }
-            .profileImg:hover{
+            
+            .profile{
+                height: 600px;
+                width: 450px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .profile:hover{
                 border: 3px solid black;
             }
+            
+
+
+
         `}
         </style>
         </Fade>

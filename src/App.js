@@ -1,21 +1,22 @@
 import React from 'react';
 import './App.css';
-import { createStore } from 'redux'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom';
 
-import NavBar from './components/Navbar'
-import BookPage from './components/BookPage'
-import BookList from './components/BookList'
-import Home from './components/Home'
-import About from './components/About'
-import Contact from'./components/Contact'
+import NavBar from './components/Navbar';
+import BookPage from './components/BookPage';
+import BookList from './components/BookList';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from'./components/Contact';
 import Gallery from './components/Gallery';
+import ScrollToTop from './components/ScrollToTop';
 
-import sandAndSage from './images/sandandsagefront.PNG'
-import reddingWriter from './images/reddingfront.jpg'
+import sandAndSage from './images/sandandsagefront.PNG';
+import reddingWriter from './images/reddingfront.jpg';
 
 function App() {
 
+  
   const booksInfo = [
     {
       title: 'Sand and Sagebrush',
@@ -51,6 +52,7 @@ function App() {
     <div>
      <NavBar/>
      <Switch>
+     <ScrollToTop>
       <Route path='/books' component={BookList}/>
       <Route exact path='/' component={Home}/>
       <Route path="/about" component={About}/>
@@ -59,18 +61,19 @@ function App() {
       {booksInfo.map((book)=>
         <Route path={`/${book.title.split(" ").join("")}`}  render={(props)=>
           <BookPage
-            title = {book.title}
-            fullTitle = {book.fullTitle}
-            description = {book.description}
-            excerpt = {book.excerpt}
-            purchaseLink = {book.purchaseLink}
-            amazonLink = {book.amazonLink}
-            barnesAndNobleLink = {book.barnesAndNobleLink}
-            published = {book.published}
-            image = {book.image}
-            bookList = {bookTitleList}
-         />}
-      />)}
+          title = {book.title}
+          fullTitle = {book.fullTitle}
+          description = {book.description}
+          excerpt = {book.excerpt}
+          purchaseLink = {book.purchaseLink}
+          amazonLink = {book.amazonLink}
+          barnesAndNobleLink = {book.barnesAndNobleLink}
+          published = {book.published}
+          image = {book.image}
+          bookList = {bookTitleList}
+          />}
+          />)}
+        </ScrollToTop>
      </Switch>
     </div>
   );
