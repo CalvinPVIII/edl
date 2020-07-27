@@ -61,7 +61,6 @@ function PurchaseButtons(props) {
             border-radius: 300px;
             text-align: center;
             padding: 13px 26px;
-            color: #00bac7;
             margin-top: 1%;
             font-weight: bold;
             font-size: 14px;
@@ -75,13 +74,17 @@ function PurchaseButtons(props) {
             border-radius: 300px;
             text-align: center;
             padding: 13px 26px;
-            color: #00bac7;
             margin-top: 1%;
             font-weight: bold;
             font-size: 14px;
             color:black;
             margin-top: 3vh;
           }
+
+          .barnesAndNoblePurchaseButton:visited, .amazonPurchaseButton:visited{
+            color: black;
+        }
+
 
           .barnesAndNoblePurchaseButton:hover, .amazonPurchaseButton:hover{
               background-color: black;

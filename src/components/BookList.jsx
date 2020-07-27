@@ -20,12 +20,12 @@ function BookList() {
   {
     title: "Redding Writer",
     cover: {redding},
-    published: false,
+    published: 'June 2020',
     description: `A young couple from Sacramento in the 1950's decide to move to a ranch in Shasta County near Redding, California. She sees it as a chance to peruse her dreams to be a writer, and he wants to be a rancher. They are unprepared for the changes this will make in their lives.`,
     link: '/reddingwriter',
-    purchaseLink: false,
-    amazonLink: false,
-    barnesAndNobleLink: false,
+    purchaseLink: 'https://www.liferichpublishing.com/Bookstore/BookDetail.aspx?BookId=SKU-001278427',
+    amazonLink: 'https://www.amazon.com/Redding-Writer-Ellie-Derrick-Lewis/dp/1489729615/ref=sr_1_1?dchild=1&keywords=ellie+derrick+lewis&qid=1595812504&sr=8-1',
+    barnesAndNobleLink: 'https://www.barnesandnoble.com/w/redding-writer-ellie-derrick-lewis/1137234950?ean=9781489729613',
   }
 ]
     return (

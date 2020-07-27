@@ -37,10 +37,10 @@ function App() {
       When Patsy saw the cabin she immediately wanted it as her sanctuary to peacefully write her stories. It was away from the business of running a ranch and the chores that were part of it.
 
       "Let me put a woman's touch to it," she begged Jim. He frowned at first, but her pleading eyes caused him to chuckle. "I can write here while you are gone, and then cook you a hot breakfast when you return.” It was an offer he couldn't refuse.`,
-      purchaseLink: false,
-      amazonLink: false,
-      barnesAndNobleLink: false,
-      published: 'Coming Soon',
+      purchaseLink: 'https://www.liferichpublishing.com/Bookstore/BookDetail.aspx?BookId=SKU-001278427',
+      amazonLink: 'https://www.amazon.com/Redding-Writer-Ellie-Derrick-Lewis/dp/1489729615/ref=sr_1_1?dchild=1&keywords=ellie+derrick+lewis&qid=1595812504&sr=8-1',
+      barnesAndNobleLink: 'https://www.barnesandnoble.com/w/redding-writer-ellie-derrick-lewis/1137234950?ean=9781489729613',
+      published: 'June 2020',
       image: reddingWriter
     }
   ]
