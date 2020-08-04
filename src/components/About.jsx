@@ -17,6 +17,7 @@ function About() {
             children, I had little time to even consider writing a book. The day finally came though, when I
             retired and could settle down at the computer.
             <br/>
+            <br/>
             I grew up in Portland, Oregon, and have lived in the West most of my life. It seems only
             natural my stories would be about farming, ranching, rodeos, county fairs, and homesteading. I
             like that type of life and enjoy writing about it. I belong to the organizations Women Writing the
@@ -40,7 +41,7 @@ function About() {
                 margin-left: 15%;
             }
             .aboutText{
-                text-align: center;
+                text-align: left;
                 width: 700px;
                 margin-left: 5%;
             }

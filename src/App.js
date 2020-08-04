@@ -26,7 +26,7 @@ function App() {
       purchaseLink: 'https://www.liferichpublishing.com/Bookstore/BookDetail.aspx?BookId=SKU-001239008',
       amazonLink: "https://www.amazon.com/dp/1489724249/ref=sr_1_1?keywords=sand+and+sagebrush+a+desert+journey&qid=1564273412&s=gateway&sr=8-1",
       barnesAndNobleLink: 'https://www.barnesandnoble.com/w/sand-and-sagebrush-ellie-derrick-lewis/1132694269?ean=9781489724243',
-      published: 'July 26, 2019',
+      published: 'July 2019',
       image: sandAndSage
     },
     {

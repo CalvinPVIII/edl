@@ -10,7 +10,7 @@ function BookList() {
     {
     title: "Sand and Sagebrush",
     cover: {sandAndSage},
-    published: 'July 26, 2019',
+    published: 'July 2019',
     description: 'In 1914, a young married couple leaves the lush Willamette Valley to participate in the last land give-away in the US. The newspaper headlines and tales of success lead them to the harsh desert valley of southern Oregon.',
     link: '/sandandsagebrush',
     purchaseLink: 'https://www.liferichpublishing.com/Bookstore/BookDetail.aspx?BookId=SKU-001239008',
